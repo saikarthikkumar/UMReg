@@ -66,7 +66,7 @@ public class SecondaryauthorizationdetailsStepDef {
 			WebElementDetails userNameBtnObj = webElementsList.get(0);
 			Thread.sleep(5000);
 			//System.out.println(userNameBtnObj.getId());
-			
+			System.out.println(driver.findElement(By.id("page-header")).getText());
 			/* Change Password */
 			driver.findElement(By.id("old_pswd_tb")).sendKeys("sciits");
 			Thread.sleep(1000);
