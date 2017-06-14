@@ -68,21 +68,21 @@ public class SecondaryauthorizationdetailsStepDef {
 			//System.out.println(userNameBtnObj.getId());
 			
 			/* Change Password */
-			driver.findElement(By.id("old_pswd_tb")).sendKeys("sciits");
+			/*driver.findElement(By.id("old_pswd_tb")).sendKeys("sciits");
 			Thread.sleep(1000);
 			driver.findElement(By.id("new_pswd_tb")).sendKeys("welcome_1");
 			Thread.sleep(500);
 			driver.findElement(By.id("confirm_new_pswd_tb")).sendKeys("welcome_1");
 			Thread.sleep(500);
-			driver.findElement(By.id("change_pswd_btn")).click();
+			driver.findElement(By.id("change_pswd_btn")).click();*/
 			
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			//secondaryauthorizationdeatils.userName(userNameBtnObj).click();
+			secondaryauthorizationdeatils.userName(userNameBtnObj).click();
 			
 			
 			
-			/*WebElementDetails updateSecondaryAuthObj = webElementsList.get(1);
-			secondaryauthorizationdeatils.updateSecondaryAuthrization(updateSecondaryAuthObj).click();*/
+			WebElementDetails updateSecondaryAuthObj = webElementsList.get(1);
+			secondaryauthorizationdeatils.updateSecondaryAuthrization(updateSecondaryAuthObj).click();
 			
 			Thread.sleep(1000);
 			/* DIrectly entering details instead of navigating to Secondary Auth screen */
