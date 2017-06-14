@@ -69,8 +69,11 @@ public class SecondaryauthorizationdetailsStepDef {
 			
 			/* Change Password */
 			driver.findElement(By.id("old_pswd_tb")).sendKeys("sciits");
+			Thread.sleep(1000);
 			driver.findElement(By.id("new_pswd_tb")).sendKeys("welcome_1");
+			Thread.sleep(500);
 			driver.findElement(By.id("confirm_new_pswd_tb")).sendKeys("welcome_1");
+			Thread.sleep(500);
 			driver.findElement(By.id("change_pswd_btn")).click();
 			
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
